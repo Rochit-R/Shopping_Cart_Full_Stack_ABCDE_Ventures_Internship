@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #cfd9df);
+  color: #333;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at top left, #e0f7fa, #ffffff);
+}
+
+.main-bg {
+  background: linear-gradient(to bottom right, #ffffff, #e1f5fe);
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #0d47a1;
+  animation: popUp 1.5s ease;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #42a5f5, #1e88e5);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(66, 165, 245, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #1e88e5, #1565c0);
+  transform: scale(1.06);
+}
+
+form {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  animation: slideFadeIn 1s ease;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 220px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 10px rgba(25, 118, 210, 0.4);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.6);
+  margin: 12px 0;
+  padding: 14px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(to bottom right, #eef9ff, #dff1ff);
+  color: #003366;
+}
+
+
+.app-container {
+  padding: 30px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #004a99;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 132, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #1769aa;
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  margin: 15px auto;
+  padding: 20px 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 100px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  li button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
